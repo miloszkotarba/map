@@ -1,92 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background: #01171b;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  position: relative;
+    background: #01171b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
 }
 
 .container {
-  width: 100%;
-  height: 100vh;
-  cursor: grab;
+    width: 100%;
+    height: 100vh;
+    cursor: grab;
 }
 
 .tooltip {
-  position: fixed;
-  opacity: 0;
-  transition: opacity ease 0.3s;
-  background: #efefefde;
-  color: black;
-  padding: 8px 15px;
-  font-family: 'Poppins', sans-serif;
-  border-radius: 15px;
+    position: fixed;
+    opacity: 0;
+    transition: opacity ease 0.3s;
+    background: #efefefde;
+    color: black;
+    padding: 8px 15px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tooltip .countryName {
+    font-weight: 500;
 }
 
 .tooltip.show {
-  opacity: 1 !important;
+    opacity: 1 !important;
 }
 
 .scroll {
-  overflow: auto;
+    overflow: auto;
 }
 
 *::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 svg {
-  margin-top: 2rem;
+    margin-top: 3.3rem;
 }
 
 svg path {
-  fill: #00394f;
-  stroke: #eee;
-  stroke-width: 0.25;
-  transition: 0.5s fill ease-in-out;
-  position: relative;
+    fill: #00394f;
+    stroke: #eee;
+    stroke-width: 0.25;
+    transition: 0.5s fill ease-in-out;
+    position: relative;
 }
 
 svg path:hover {
-  fill: #006284;
-  cursor: pointer;
+    fill: #006284;
+    cursor: pointer;
 }
 
 .button-box {
-  z-index: 100;
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  flex-direction: column;
+    z-index: 100;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .button-box button {
-  margin-bottom: 10px;
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  border: none;
-  background: #ffffffdd;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  font-size: 1.6rem;
-  -webkit-text-stroke-width: 1.5px;
-  color: #01171b;
-  box-shadow: 0 0 7px 1px rgb(64, 64, 64);
-  transition: all 0.3s ease;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: #ffffffdd;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 1.6rem;
+    -webkit-text-stroke-width: 1.5px;
+    color: #01171b;
+    box-shadow: 0 0 7px 1px rgb(64, 64, 64);
+    transition: all 0.3s ease;
 }
 
 .button-box button:hover {
-  background: #fff;
+    background: #fff;
 }
